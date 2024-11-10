@@ -9,6 +9,9 @@ class Student {
     private int programmingTest2;
     private int programmingTestFinal;
 
+    //static variables always need to be initialized upon declaration
+    private static String professorName = "Kimberly WhiteHouse"; 
+
     public Student() {
         name = "";
         conceptTest1 = 0;
@@ -17,6 +20,14 @@ class Student {
         programmingTest1 = 0;
         programmingTest2 = 0;
         programmingTestFinal = 0; 
+    }
+
+    public static void setProfessorName(String professorName) {
+        Student.professorName = professorName ;
+    }
+
+    public static String getProfessorName() {
+        return professorName; 
     }
 
     public void setName(String name) {
