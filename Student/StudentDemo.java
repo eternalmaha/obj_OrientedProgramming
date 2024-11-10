@@ -28,27 +28,27 @@ public class StudentDemo {
                 myStudent.setName(studentName);
             } else if (option == 2) {
                 System.out.println("What did you get on the first concept test?");
-                int newConceptTest1 = keyboard.nextInt(); 
+                double newConceptTest1 = keyboard.nextDouble(); 
                 myStudent.setConceptTest1(newConceptTest1);
             } else if (option == 3) {
                 System.out.println("What did you get on the second concept test?");
-                int newConceptTest2 = keyboard.nextInt(); 
+                double newConceptTest2 = keyboard.nextDouble(); 
                 myStudent.setConceptTest2(newConceptTest2);
             } else if (option == 4) {
                 System.out.println("What did you get on finals concept test?");
-                int newConceptTestFinal = keyboard.nextInt(); 
+                double newConceptTestFinal = keyboard.nextDouble(); 
                 myStudent.setConceptTestFinal(newConceptTestFinal);
             } else if (option == 5) {
                 System.out.println("What did you get on the first programming test?");
-                int newProgrammingTest1 = keyboard.nextInt(); 
+                double newProgrammingTest1 = keyboard.nextDouble(); 
                 myStudent.setProgrammingTest1(newProgrammingTest1);
             } else if (option == 6) {
                 System.out.println("What did you get on the second programming test?");
-                int newProgrammingTest2 = keyboard.nextInt(); 
+                double newProgrammingTest2 = keyboard.nextDouble(); 
                 myStudent.setProgrammingTest2(newProgrammingTest2);
             } else if (option == 7) {
                 System.out.println("What did you get on the finals programming test?");
-                int newProgrammingTestFinal = keyboard.nextInt(); 
+                double newProgrammingTestFinal = keyboard.nextDouble(); 
                 myStudent.setProgrammingTestFinal(newProgrammingTestFinal);
             } else if (option == 8) {
                 System.out.println("Viewing Student Test Scores---");
@@ -71,6 +71,7 @@ public class StudentDemo {
     
     
     keyboard.close();
+    
     } //end main
 
 } //end class 
