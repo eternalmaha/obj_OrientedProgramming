@@ -34,7 +34,7 @@ public class Demo1 {
         //type mismatch. Cannot have type Person point to type Faculty but only vice versa because type Faculty inherits from type Person. 
         //Type Person is the parent class of type Faculty, and so will not have Faculty's type. 
         //dan = zach; 
-    
+
 	
 		
 	}
