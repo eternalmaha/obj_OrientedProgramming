@@ -1,4 +1,4 @@
-package Inheritance;
+
 
 //explicitly stating that Person class' parent is Object (though its implicit) 
 public class Person extends Object {
@@ -36,7 +36,8 @@ public class Person extends Object {
 	 */
 	
 	//when you override, the method header needs to be the exact same name as its parent class (the Object class - the GodFather class). 
-	public String toString() {
+	@Override
+    public String toString() {
 		return "Name: " + name; 
 	}
 	

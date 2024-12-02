@@ -1,4 +1,4 @@
-package Inheritance;
+
 
 //Faculty inherits all of Employee's member fields, both public and protected
 public class Faculty extends Employee {
@@ -58,7 +58,8 @@ public class Faculty extends Employee {
 	
 	//super calls the toString method of the parent class, Employee, calling Employee's toString method, saving us lots of time and effort. 
 	//In this case, super will bring us both the name and employee ID of the Faculty member. This leaves only the department name to be added. 
-	public String toString() {
+	@Override
+    public String toString() {
 		return super.toString() + " Department Name: " + getDepartmentName(); 
 	}
 	

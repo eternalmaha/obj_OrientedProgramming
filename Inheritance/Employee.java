@@ -1,4 +1,4 @@
-package Inheritance;
+
 
 //extend means that Employee inherits all the member fields from the Person class
 	
@@ -47,6 +47,7 @@ public class Employee extends Person {
 	//this toString method definition  will take precedent over the toString method in Person class when 
 	//toString is called on instances of the Employee class since the employee class is the more direct line 
 	//even though Person is Employee's parent. 
+	@Override
 	public String toString() {
 		//return "Name: " + getName() + "\n" + "Employee ID: " + employeeID; 
 		// return "Name: " + super.getName() + "\n" + "Employee ID: " + employeeID; 
