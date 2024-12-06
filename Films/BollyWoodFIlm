@@ -1,0 +1,75 @@
+
+public class BollyWoodFilm extends ForeignFilm {
+	
+	private String[] songs;
+	private String[] secondaryLanguages; 
+	private int numOfSongs; 
+	private int numOfSecondLanguages; 
+	
+	private static int maxNumOfSongs = 20;
+	private static int maxNumOfSecondLanguages = 5; 
+	
+	//default constructor 
+	public BollyWoodFilm() {
+		super(); 
+		numOfSongs = 0;
+		numOfSecondLanguages = 0; 
+		songs = new String[20];
+		secondaryLanguages = new String[5];
+	}
+	
+	//static methods 
+	
+	public static void setMaxNumberOfSongs(int newMaxNumOfSongs) {
+		BollyWoodFilm.maxNumOfSongs = newMaxNumOfSongs; 
+	}
+	
+	public static int getMaximumNumberOfSongs() {
+		return maxNumOfSongs; 
+	}
+	
+	public static void setMaxNumberOfSecondLanguages(int newMaxSecondLanguages) {
+		BollyWoodFilm.maxNumOfSecondLanguages = newMaxSecondLanguages;
+	}
+	
+	public static int getMaxSecondLanguages() {
+		return maxNumOfSecondLanguages; 
+	}
+	
+	public void addSong(String songName) {
+		if (numOfSongs < maxNumOfSongs && numOfSongs < songs.length ) {
+			songs[numOfSongs] = songName;
+			numOfSongs++; 
+			
+		}
+	}
+	
+	public String getSongs() {
+		String songList = " ";
+		for (int i = 0; i < numOfSongs; i++) {
+			songList += "\n" + songs[i]; 
+		}
+		return songList; 
+	}
+	
+	public void addSecondaryLanguage(String secondLanguageName) {
+		if (numOfSecondLanguages < maxNumOfSecondLanguages && numOfSecondLanguages < secondaryLanguages.length) {
+			secondaryLanguages[numOfSecondLanguages] = secondLanguageName; 
+			numOfSecondLanguages++; 
+		}
+	}
+	
+	public String getSecondaryLanguages() {
+		String secondLanguageList = " ";
+		for (int i = 0; i < numOfSecondLanguages ; i++ ) {
+			secondLanguageList += "\n" + secondaryLanguages[i]; 
+		}
+		return secondLanguageList; 
+	}
+	
+	@Override
+	public String toString() {
+		return super.toString() + this.getSongs() + this.getSecondaryLanguages(); 
+	}
+	
+}
